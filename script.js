@@ -354,9 +354,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // WhatsApp Pre-defined Messages
     const whatsappMessages = {
-        booking: "Hello GoaDreams! 👋 I want to book a tour.",
+        booking: "Hello goaataxi! 👋 I want to book a tour.",
         inquiry: "Hi! I have a question about your tour packages.",
-        custom: "Hello GoaDreams! Tell me more about your services."
+        custom: "Hello goaataxi! Tell me more about your services."
     };
 
     // Add WhatsApp button interactivity
@@ -376,7 +376,7 @@ document.addEventListener('DOMContentLoaded', function() {
     bookButtons.forEach((btn, index) => {
         btn.addEventListener('click', function(e) {
             const packageName = this.closest('.card')?.querySelector('h3')?.textContent || 'Tour Package';
-            const message = `Hello GoaDreams! 👋 I'm interested in booking the "${packageName}". Please provide more details.`;
+            const message = `Hello goaataxi! 👋 I'm interested in booking the "${packageName}". Please provide more details.`;
             const whatsappUrl = `https://wa.me/918390603468?text=${encodeURIComponent(message)}`;
             
             // Open WhatsApp (in real scenario)
@@ -424,12 +424,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const widgetHtml = `
                     <div class="whatsapp-chat-container" style="display: none;">
                         <div class="whatsapp-chat-header">
-                            <span>GoaDreams Support</span>
+                            <span>goaataxi Support</span>
                             <span style="cursor: pointer; font-size: 18px;">×</span>
                         </div>
                         <div class="whatsapp-chat-body">
                             <div class="whatsapp-message">
-                                <strong>Welcome to GoaDreams! 🎉</strong><br>
+                                <strong>Welcome to goaataxi! 🎉</strong><br>
                                 How can we help you today?<br><br>
                                 <em>• Book a tour</em><br>
                                 <em>• Get information</em><br>
@@ -633,7 +633,7 @@ function closeDetails() {
 
 function bookService(serviceId) {
     const details = serviceDetails[serviceId];
-    const message = `Hi GoaDreams! I'm interested in booking: ${details.title}. Please provide more information.`;
+    const message = `Hi goaataxi! I'm interested in booking: ${details.title}. Please provide more information.`;
     const whatsappUrl = `https://wa.me/918390603468?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
@@ -652,3 +652,4 @@ document.addEventListener('keydown', function(event) {
         closeDetails();
     }
 });
+
