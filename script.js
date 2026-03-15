@@ -354,9 +354,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // WhatsApp Pre-defined Messages
     const whatsappMessages = {
-        booking: "Hello goaataxi! 👋 I want to book a tour.",
+        booking: "Hello Goaataxi! 👋 I want to book a tour.",
         inquiry: "Hi! I have a question about your tour packages.",
-        custom: "Hello goaataxi! Tell me more about your services."
+        custom: "Hello Goaataxi! Tell me more about your services."
     };
 
     // Add WhatsApp button interactivity
@@ -365,7 +365,7 @@ document.addEventListener('DOMContentLoaded', function() {
         ctaButton.addEventListener('click', function(e) {
             // Option to open WhatsApp with pre-filled message
             setTimeout(() => {
-                const whatsappUrl = `https://wa.me/918390603468?text=${encodeURIComponent(whatsappMessages.booking)}`;
+                const whatsappUrl = `https://wa.me/919113003042?text=${encodeURIComponent(whatsappMessages.booking)}`;
                 console.log('Redirecting to WhatsApp for booking');
             }, 300);
         });
@@ -376,8 +376,8 @@ document.addEventListener('DOMContentLoaded', function() {
     bookButtons.forEach((btn, index) => {
         btn.addEventListener('click', function(e) {
             const packageName = this.closest('.card')?.querySelector('h3')?.textContent || 'Tour Package';
-            const message = `Hello goaataxi! 👋 I'm interested in booking the "${packageName}". Please provide more details.`;
-            const whatsappUrl = `https://wa.me/918390603468?text=${encodeURIComponent(message)}`;
+            const message = `Hello Goaataxi! 👋 I'm interested in booking the "${packageName}". Please provide more details.`;
+            const whatsappUrl = `https://wa.me/919113003042?text=${encodeURIComponent(message)}`;
             
             // Open WhatsApp (in real scenario)
             console.log('WhatsApp Message:', message);
@@ -424,12 +424,12 @@ document.addEventListener('DOMContentLoaded', function() {
                 const widgetHtml = `
                     <div class="whatsapp-chat-container" style="display: none;">
                         <div class="whatsapp-chat-header">
-                            <span>goaataxi Support</span>
+                            <span>Goaataxi Support</span>
                             <span style="cursor: pointer; font-size: 18px;">×</span>
                         </div>
                         <div class="whatsapp-chat-body">
                             <div class="whatsapp-message">
-                                <strong>Welcome to goaataxi! 🎉</strong><br>
+                                <strong>Welcome to Goaataxi! 🎉</strong><br>
                                 How can we help you today?<br><br>
                                 <em>• Book a tour</em><br>
                                 <em>• Get information</em><br>
@@ -479,19 +479,19 @@ const serviceDetails = {
         title: '🚗 PICKUP & DROP SERVICES',
         price: 'Starting ₹1,149',
         items: [
-            '🚆 Thivim Railway Station – ₹1,149',
-            '🚆 Karmali railway station – ₹1,499',
-            '✈️ Manohar International Airport (Mopa Airport) – ₹1,549',
-            '✈️ Dabolim Airport – ₹1,749',
-            '🚆 Madgaon Junction railway station – ₹1,799',
-            '🚆 Vasco da Gama railway station – ₹1,799',
+            '🚆 Thivim Railway Station', // – ₹1,149',
+            '🚆 Karmali railway station ',//– ₹1,499',
+            '✈️ Manohar International Airport (Mopa Airport)',// – ₹1,549',
+            '✈️ Dabolim Airport',// – ₹1,749',
+            '🚆 Madgaon Junction railway station',// – ₹1,799',
+            '🚆 Vasco da Gama railway station',// – ₹1,799',
             
         ],
         description: 'Affordable and reliable pickup & drop services from any location. We serve all major airports and railway stations in Goa.'
     },
     northgoa: {
-        title: '🌊 NORTH GOA EXPLORER – ₹2,799 (9 Points)',
-        price: '₹2,799',
+        title: '🌊 NORTH GOA EXPLORER ',//– ₹2,799 (9 Points)',
+        price: 'Cheapest Package', //'₹2,799',
         items: [
             '🏰 Aguada Fort',
             '🐬 Dolphin Point',
@@ -506,8 +506,8 @@ const serviceDetails = {
         description: 'Enjoy a full day exploring North Goa\'s most iconic attractions, beaches, and entertainment spots. Includes all major tourist destinations.'
     },
     southgoa: {
-        title: '🌴 SOUTH GOA SERENITY – ₹2,999 (9 Points)',
-        price: '₹2,999',
+        title: '🌴 SOUTH GOA SERENITY', // – ₹2,999 (9 Points)',
+        price: 'Cheapest Package',//'₹2,999',
         items: [
             '🛕 Mangeshi Temple',
             '🛕 Shri Balaji Temple',
@@ -522,8 +522,8 @@ const serviceDetails = {
         description: 'Experience South Goa\'s spiritual and cultural heritage. Includes temples, historic churches, scenic beaches, and a romantic sunset cruise.'
     },
     northwestbeaches: {
-        title: '🌅 NORTH-WEST EXPLORER – ₹4,499',
-        price: '₹4,499',
+        title: '🌅 NORTH-WEST EXPLORER ',//– ₹4,499',
+        price: 'Cheapest Package',//'₹4,499',
         items: [
             '🌴 Arambol Beach',
             '🌊 Querim Beach (Turtle Beach)',
@@ -532,8 +532,8 @@ const serviceDetails = {
         description: 'Discover the pristine and less crowded beaches of North-West Goa. Perfect for those seeking tranquility and natural beauty.'
     },
     southeastbeaches: {
-        title: '🌊 SOUTH–EAST EXPLORER – ₹5,499',
-        price: '₹5,499',
+        title: '🌊 SOUTH–EAST EXPLORER ',//– ₹5,499',
+        price: 'Cheapest Package',//'₹5,499',
         items: [
             '🌴 Palolem Beach',
             '🦋 Butterfly Beach',
@@ -543,8 +543,8 @@ const serviceDetails = {
         description: 'Explore South Goa\'s most exclusive and scenic beaches. Includes hidden coves, pristine sands, and stunning coastal views.'
     },
     watersports: {
-        title: '🌊 WATER SPORTS PACKAGE – ₹1,999 / per person',
-        price: '₹1,999 per person',
+        title: '🌊 WATER SPORTS PACKAGE ',//– ₹1,999 / per person',
+        price: 'Cheapest Package',//'₹1,999 per person',
         items: [
             '🚤 Jet Ski',
             '🚤 Speed Boat',
@@ -555,8 +555,8 @@ const serviceDetails = {
         description: 'Experience thrilling water sports activities at Goa\'s best beaches. All equipment and professional instructors included.'
     },
     scubadiving: {
-        title: '🤿 SCUBA DIVING PACKAGE (Island Explorer) – ₹1,499 / per person',
-        price: '₹1,499 per person',
+        title: '🤿 SCUBA DIVING PACKAGE (Island Explorer) ',//– ₹1,499 / per person',
+        price: 'Cheapest Package',//'₹1,499 per person',
         items: [
             '✔️ Breakfast Included',
             '✔️ Meal Included',
@@ -566,8 +566,8 @@ const serviceDetails = {
         description: 'Dive into the underwater world of Goa. Includes professional training, equipment, meals, and other water sports activities.'
     },
     dudhsagar: {
-        title: '🌊 DUDHSAGAR EXPLORER – ₹5,299',
-        price: '₹5,299',
+        title: '🌊 DUDHSAGAR EXPLORER ',//– ₹5,299',
+        price: 'Cheapest Package',//'₹5,299',
         items: [
             '🏞 Dudhsagar Falls',
             '🌿 Spice Plantation',
@@ -633,8 +633,8 @@ function closeDetails() {
 
 function bookService(serviceId) {
     const details = serviceDetails[serviceId];
-    const message = `Hi goaataxi! I'm interested in booking: ${details.title}. Please provide more information.`;
-    const whatsappUrl = `https://wa.me/918390603468?text=${encodeURIComponent(message)}`;
+    const message = `Hi Goaataxi! I'm interested in booking: ${details.title}. Please provide more information.`;
+    const whatsappUrl = `https://wa.me/919113003042?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
 }
 
@@ -652,4 +652,3 @@ document.addEventListener('keydown', function(event) {
         closeDetails();
     }
 });
-
