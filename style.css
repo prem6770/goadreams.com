@@ -801,7 +801,7 @@ nav a:hover::after {
 }
 
 .section-title {
-    color: #0A3D62;
+    color: #0780dd;
     font-size: 42px;
     font-weight: 900;
     margin-bottom: 10px;
@@ -2013,5 +2013,4 @@ footer {
     .modal-action-buttons {
         flex-direction: column;
     }
-
 }
